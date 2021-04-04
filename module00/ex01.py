@@ -5,7 +5,8 @@ Created on Sat Apr  3 11:25:02 2021
 @author: IBTIHAL
 """
 
-def reverse(text):
+def reverse():
+    text=input("please write your text: ")
     space =''
     for char in text:
         space = char + space
