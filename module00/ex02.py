@@ -5,9 +5,11 @@ Created on Sat Apr  3 11:44:44 2021
 """
 
 def number(nb):
-    if nb==0:
+    if type(nb)==str or type(nb)==float:
+        print("error the input should be an integer")
+    elif nb==0:
         print("I'm Zero.")
-    if nb%2==0:
+    elif nb%2==0:
         print("I'm Even.")
     else:
         print ("I'm Odd.")
