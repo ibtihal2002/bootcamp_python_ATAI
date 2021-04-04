@@ -30,4 +30,6 @@ def encryption(message):
             return "ERROR"
       if letter != ' ':
          new += MORSE_CODE_DICT[letter]
-   return new
+   print(new)
+
+encryption("FGHTY") 

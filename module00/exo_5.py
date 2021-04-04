@@ -22,7 +22,7 @@ for key,value in languages.items():
 
 #kata02
 def timing(hour, minutes, year, month, day):
-    print(month,"/",day,"/",year," ",hour,":",minutes)
+    print(month ,"/" ,day,"/",year," ",hour,":",minutes)
     
 #kata03
 def kata03(phrase):

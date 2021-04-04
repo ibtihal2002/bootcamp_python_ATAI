@@ -7,9 +7,9 @@ Created on Sat Apr  3 09:12:49 2021
 
 dic= {"key 1":"value 1","key b":"value b"}
 for key in dic:
-    print (dic.key)
-for value in dic.values():
-    print (dic.value)
+    print (key)
+for key in dic:
+    print (dic[key])
 for key, value in dic.items():
     print(key,value)
 #question 2
@@ -46,11 +46,15 @@ dic.update({x:y+z+t})
 print(dic)
 #question 5  
 dic={"sandwich":"the ingredients are :ham,bread,tomaoes,cheese.It's going to take you 10 min.It's considered as lunch meal","cake":"ingredients are floor,eggs,suger.It's going to take you 60 min. It's considered as desert ","salad":"ingredients are avocado,arogula,tomatoes,spinach.It's a lunch meal.It going to take you 20 min."}
-for key,value in dic:
+for key in dic:
     print(' the recipe of {0} is {1}'.format(key, dic[key]))
 #question 6
 def choice():
     print("1: Add a recipe","2: Delete a recipe ","3: Print a recipe","4: Print the cookbook","5: Quit",sep='\n')
     x=input("Please select an option bellow by typing the corresponding number: ")
     print(x)
+    if int(x)==5:
+        exit()
+while True:
+    choice()
     
