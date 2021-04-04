@@ -1,0 +1,5 @@
+def filtrered(phrase,n):
+    phrase=phrase.split()
+    filtrer = filter(lambda x: len(x)>=n, phrase)
+    
+    return list(filtrer)
